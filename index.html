@@ -51,17 +51,34 @@ h1{
 }
 
 .heart{
-  width:140px;
-  height:auto;
-  object-fit:contain;
-  animation:heartbeat 1.7s ease-in-out infinite;
+    width:220px;
+    height:220px;
+    object-fit:contain;
+
+    margin-left:-55px;
+    margin-right:-55px;
+
+    transform:scale(2.4);
+
+    animation:heartbeat 1.7s ease-in-out infinite;
 }
 
 @keyframes heartbeat{
-  0%,100%{transform:scale(1) rotate(0deg)}
-  25%{transform:scale(1.08) rotate(-3deg)}
-  50%{transform:scale(1)}
-  70%{transform:scale(1.13) rotate(3deg)}
+    0%,100%{
+        transform:scale(2.4);
+    }
+
+    25%{
+        transform:scale(2.55);
+    }
+
+    50%{
+        transform:scale(2.4);
+    }
+
+    75%{
+        transform:scale(2.6);
+    }
 }
 
 p{
